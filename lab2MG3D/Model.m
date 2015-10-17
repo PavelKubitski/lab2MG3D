@@ -59,6 +59,8 @@
         glVertexAttribPointer(VertexAttribColor, 4, GL_FLOAT, GL_FALSE, sizeof(MyVertex), (const GLvoid *) offsetof(MyVertex, Color));
         glEnableVertexAttribArray(VertexAttribTexCoord);
         glVertexAttribPointer(VertexAttribTexCoord, 2, GL_FLOAT, GL_FALSE, sizeof(MyVertex), (const GLvoid *) offsetof(MyVertex, TexCoord));
+        glEnableVertexAttribArray(VertexAttribNormal);
+        glVertexAttribPointer(VertexAttribNormal, 3, GL_FLOAT, GL_FALSE, sizeof(MyVertex), (const GLvoid *) offsetof(MyVertex, Normal));
         
         glBindVertexArrayOES(0);
         glBindBuffer(GL_ARRAY_BUFFER, 0);

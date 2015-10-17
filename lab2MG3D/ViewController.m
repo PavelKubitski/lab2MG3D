@@ -64,7 +64,7 @@
     glClearColor(1, 1, 51/255.0, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
-    
+
     
 //  GLKMatrix4 viewMatrix = GLKMatrix4MakeLookAt(0, 0, 0, self.ground.position.x, self.ground.position.y, self.ground.position.z, 0, 1, 0);
     GLKMatrix4 viewMatrix = GLKMatrix4Identity;
