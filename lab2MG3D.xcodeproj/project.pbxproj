@@ -40,12 +40,12 @@
 		57A46D0A1BBA99E100E43D1B /* Rock.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46D091BBA99E100E43D1B /* Rock.m */; };
 		57E22C4E1BC062CB00AC349B /* bulletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E22C4D1BC062CB00AC349B /* bulletModel.m */; };
 		57E22C511BC0631C00AC349B /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E22C501BC0631C00AC349B /* Bullet.m */; };
-		57EF8D051BBAE71100968905 /* stoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D031BBAE71100968905 /* stoneModel.m */; };
+		57EA25731BD38DDE0061B0EA /* rockWideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EA25721BD38DDE0061B0EA /* rockWideModel.m */; };
+		57EA25761BD38EF60061B0EA /* stoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EA25751BD38EF60061B0EA /* stoneModel.m */; };
 		57EF8D081BBAE7B100968905 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D071BBAE7B100968905 /* Enemy.m */; };
 		57EF8D0B1BBAE8FA00968905 /* enemyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D091BBAE8FA00968905 /* enemyModel.m */; };
 		57EF8D111BBB2D4E00968905 /* Stone.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D101BBB2D4E00968905 /* Stone.m */; };
 		57EF8D191BBBD5E300968905 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D181BBBD5E300968905 /* Scene.m */; };
-		57EF8D201BBE811100968905 /* rockWideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D1F1BBE811100968905 /* rockWideModel.m */; };
 		57EF8D261BBE8D7B00968905 /* BackStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF8D251BBE8D7B00968905 /* BackStage.m */; };
 		57EF8D311BBF1C3D00968905 /* darkMetal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF8D2B1BBF1C3D00968905 /* darkMetal.jpg */; };
 		57EF8D321BBF1C3D00968905 /* rock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF8D2C1BBF1C3D00968905 /* rock.jpg */; };
@@ -126,8 +126,10 @@
 		57E22C4D1BC062CB00AC349B /* bulletModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bulletModel.m; sourceTree = "<group>"; };
 		57E22C4F1BC0631C00AC349B /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		57E22C501BC0631C00AC349B /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
-		57EF8D031BBAE71100968905 /* stoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stoneModel.m; sourceTree = "<group>"; };
-		57EF8D041BBAE71100968905 /* stoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stoneModel.h; sourceTree = "<group>"; };
+		57EA25711BD38DDE0061B0EA /* rockWideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rockWideModel.h; sourceTree = "<group>"; };
+		57EA25721BD38DDE0061B0EA /* rockWideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rockWideModel.m; sourceTree = "<group>"; };
+		57EA25741BD38EF60061B0EA /* stoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stoneModel.h; sourceTree = "<group>"; };
+		57EA25751BD38EF60061B0EA /* stoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stoneModel.m; sourceTree = "<group>"; };
 		57EF8D061BBAE7B100968905 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		57EF8D071BBAE7B100968905 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 		57EF8D091BBAE8FA00968905 /* enemyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enemyModel.m; sourceTree = "<group>"; };
@@ -136,8 +138,6 @@
 		57EF8D101BBB2D4E00968905 /* Stone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stone.m; sourceTree = "<group>"; };
 		57EF8D171BBBD5E300968905 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		57EF8D181BBBD5E300968905 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
-		57EF8D1E1BBE811100968905 /* rockWideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rockWideModel.h; sourceTree = "<group>"; };
-		57EF8D1F1BBE811100968905 /* rockWideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rockWideModel.m; sourceTree = "<group>"; };
 		57EF8D241BBE8D7B00968905 /* BackStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackStage.h; path = Images.xcassets/BackStage.h; sourceTree = "<group>"; };
 		57EF8D251BBE8D7B00968905 /* BackStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackStage.m; path = Images.xcassets/BackStage.m; sourceTree = "<group>"; };
 		57EF8D2B1BBF1C3D00968905 /* darkMetal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkMetal.jpg; sourceTree = "<group>"; };
@@ -267,18 +267,18 @@
 				578F14641BB40F3700216C39 /* cube.m */,
 				578F147A1BB930C700216C39 /* pod1model.h */,
 				578F14791BB930C700216C39 /* pod1model.m */,
-				57EF8D031BBAE71100968905 /* stoneModel.m */,
-				57EF8D041BBAE71100968905 /* stoneModel.h */,
 				57EF8D091BBAE8FA00968905 /* enemyModel.m */,
 				57EF8D0A1BBAE8FA00968905 /* enemyModel.h */,
+				57EA25741BD38EF60061B0EA /* stoneModel.h */,
+				57EA25751BD38EF60061B0EA /* stoneModel.m */,
 				578F147C1BB9376300216C39 /* engineModel.h */,
 				578F147D1BB9376300216C39 /* engineModel.m */,
 				578F14811BB94EAE00216C39 /* engine2Model.h */,
 				578F14821BB94EAE00216C39 /* engine2Model.m */,
+				57EA25711BD38DDE0061B0EA /* rockWideModel.h */,
+				57EA25721BD38DDE0061B0EA /* rockWideModel.m */,
 				57A46CFD1BBA86B900E43D1B /* pod2model.h */,
 				57A46CFE1BBA86B900E43D1B /* pod2model.m */,
-				57EF8D1E1BBE811100968905 /* rockWideModel.h */,
-				57EF8D1F1BBE811100968905 /* rockWideModel.m */,
 				57EF8D401BBF295300968905 /* sandSkyModel.h */,
 				57EF8D411BBF295300968905 /* sandSkyModel.m */,
 				57E22C4C1BC062CB00AC349B /* bulletModel.h */,
@@ -499,8 +499,9 @@
 				57EF8D191BBBD5E300968905 /* Scene.m in Sources */,
 				579932651BC14AB8002AA9E3 /* MusicEffect.m in Sources */,
 				57EF8D261BBE8D7B00968905 /* BackStage.m in Sources */,
+				57EA25761BD38EF60061B0EA /* stoneModel.m in Sources */,
 				57EF8D0B1BBAE8FA00968905 /* enemyModel.m in Sources */,
-				57EF8D051BBAE71100968905 /* stoneModel.m in Sources */,
+				57EA25731BD38DDE0061B0EA /* rockWideModel.m in Sources */,
 				57A46D0A1BBA99E100E43D1B /* Rock.m in Sources */,
 				57EF8D421BBF295300968905 /* sandSkyModel.m in Sources */,
 				578F14831BB94EAE00216C39 /* engine2Model.m in Sources */,
@@ -510,7 +511,6 @@
 				578F14661BB40F3700216C39 /* cube.m in Sources */,
 				578F147B1BB930C700216C39 /* pod1model.m in Sources */,
 				57A46CFC1BBA868500E43D1B /* Pod2.m in Sources */,
-				57EF8D201BBE811100968905 /* rockWideModel.m in Sources */,
 				57A46CF91BB9D62C00E43D1B /* Podrace.m in Sources */,
 				578F14871BB94F2500216C39 /* Engine2.m in Sources */,
 				578F14701BB7F7E300216C39 /* Engine1.m in Sources */,

@@ -72,6 +72,7 @@
     glLinkProgram(_programHandle);
     
     self.modelViewMatrix = GLKMatrix4Identity;
+    
     _projectionUniform = glGetUniformLocation(_programHandle, "u_ProjectionMatrix");
     _modelViewMatrixUniform = glGetUniformLocation(_programHandle, "u_ModelViewMatrix");
     _texUniform = glGetUniformLocation(_programHandle, "u_Texture");
@@ -81,6 +82,7 @@
     _lightDirectionUniform = glGetUniformLocation(_programHandle, "u_Light.Direction");
     _matSpecularIntensityUniform = glGetUniformLocation(_programHandle, "u_MatSpecularIntensity");
     _shininessUniform = glGetUniformLocation(_programHandle, "u_Shininess");
+    
     GLint linkSuccess;
     glGetProgramiv(_programHandle, GL_LINK_STATUS, &linkSuccess);
     if (linkSuccess == GL_FALSE) {
