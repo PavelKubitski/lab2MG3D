@@ -30,7 +30,6 @@
 @property (nonatomic, strong) NSMutableArray *children;
 
 - (instancetype)initWithName:(char *)name shader:(BaseEffect *)shader vertices:(MyVertex *)vertices vertexCount:(unsigned int)vertexCount;
-
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
 - (void)updateWithDelta:(GLfloat)aDelta;
 - (void)loadTexture:(NSString *)filename;

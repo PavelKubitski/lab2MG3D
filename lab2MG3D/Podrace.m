@@ -60,8 +60,8 @@
 }
 
 - (void)updateWithDelta:(GLfloat)aDelta {
-    self.leftEngine.rotationY += aDelta;
-    self.rightEngine.rotationY -= aDelta;
+//    self.leftEngine.rotationY += aDelta;
+//    self.rightEngine.rotationY -= aDelta;
 }
 
 

@@ -68,7 +68,7 @@
         self.rockLeft.position = GLKVector3Make(-31, self.area.height/2+5, 0);
         
         self.stone = [[Stone alloc] initWithShader:self.shader];
-        self.stone.position = GLKVector3Make(self.area.width/2, 50, -1);
+        self.stone.position = GLKVector3Make(self.area.width/2, 50, 0);
         
         [self.children addObject:self.podrace];
         [self.children addObject:self.podrace2];

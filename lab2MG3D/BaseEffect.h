@@ -14,6 +14,7 @@
 @property (nonatomic, assign) GLuint programHandle;
 @property (nonatomic, assign) GLKMatrix4 projectionMatrix;
 @property (nonatomic, assign) GLKMatrix4 modelViewMatrix;
+@property (nonatomic, assign) GLKMatrix4 matrix;
 @property (assign) GLuint texture;
 
 

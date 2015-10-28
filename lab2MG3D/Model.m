@@ -10,6 +10,7 @@
 #import "BaseEffect.h"
 #import "OpenGLES/ES2/glext.h"
 
+
 @interface Model ()
 
 @property (nonatomic, assign) char *name;
@@ -18,6 +19,7 @@
 @property (nonatomic, assign) GLuint indexBuffer;
 @property (nonatomic, assign) unsigned int vertexCount;
 @property (nonatomic, assign) unsigned int indexCount;
+
 
 @end
 
@@ -43,6 +45,8 @@
         
         self.children = [[NSMutableArray alloc] init];
         
+        
+        
         glGenVertexArraysOES(1, &_vao);
         glBindVertexArrayOES(_vao);
         
@@ -66,19 +70,17 @@
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
         
+        
     }
     return self;
 }
 
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
     
+    
 
-    
-    
     GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelMatrix]);
-//    GLKMatrix4 modelViewMatrix = [self modelMatrix];
     for (Model *child in self.children) {
-
         [child renderWithParentModelViewMatrix:modelViewMatrix];
     }
     _shader.modelViewMatrix = modelViewMatrix;
@@ -89,7 +91,19 @@
     glDrawArrays(GL_TRIANGLES,0, _vertexCount);
     glBindVertexArrayOES(0);
     
+    
+
+    GLKMatrix4 mvpMatrix = GLKMatrix4Multiply(modelViewMatrix, _shader.matrix);
+    _shader.modelViewMatrix = mvpMatrix;
+    [_shader prepareToDraw];
+    
+    glBindVertexArrayOES(_vao);
+    glDrawArrays(GL_TRIANGLES,0, _vertexCount);
+    glBindVertexArrayOES(0);
+    
 }
+
+
 
 
 

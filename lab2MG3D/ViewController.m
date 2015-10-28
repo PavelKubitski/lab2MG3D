@@ -55,7 +55,6 @@
     self.planet.position = GLKVector3Make(15, 20, -50);
 
     _shader.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width/self.view.bounds.size.height, 1, 150);
-    
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
@@ -72,7 +71,7 @@
     
     [self.scene renderWithParentModelViewMatrix:viewMatrix];
     [self.backStage renderWithParentModelViewMatrix:viewMatrix];
-    [self.planet renderWithParentModelViewMatrix:viewMatrix];
+//    [self.planet renderWithParentModelViewMatrix:viewMatrix];
     
 
     
