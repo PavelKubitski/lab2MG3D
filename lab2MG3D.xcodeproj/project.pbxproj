@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573FEC2B1BE23709009E317E /* engineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 573FEC2A1BE23709009E317E /* engineModel.m */; };
+		573FEC2E1BE239FC009E317E /* engine2leftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 573FEC2D1BE239FC009E317E /* engine2leftModel.m */; };
+		573FEC311BE23A48009E317E /* Engine2left.m in Sources */ = {isa = PBXBuildFile; fileRef = 573FEC301BE23A48009E317E /* Engine2left.m */; };
+		573FEC341BE3855A009E317E /* pod2model.m in Sources */ = {isa = PBXBuildFile; fileRef = 573FEC331BE3855A009E317E /* pod2model.m */; };
+		573FEC361BE38B6F009E317E /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 573FEC351BE38B6F009E317E /* fragmentShader.glsl */; };
 		578F142C1BB292AF00216C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F142B1BB292AF00216C39 /* main.m */; };
 		578F142F1BB292AF00216C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F142E1BB292AF00216C39 /* AppDelegate.m */; };
 		578F14321BB292AF00216C39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F14311BB292AF00216C39 /* ViewController.m */; };
@@ -22,7 +27,6 @@
 		578F14701BB7F7E300216C39 /* Engine1.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F146F1BB7F7E300216C39 /* Engine1.m */; };
 		578F14781BB92FD600216C39 /* Pod1.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F14771BB92FD600216C39 /* Pod1.m */; };
 		578F147B1BB930C700216C39 /* pod1model.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F14791BB930C700216C39 /* pod1model.m */; };
-		578F147E1BB9376300216C39 /* engineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F147D1BB9376300216C39 /* engineModel.m */; };
 		578F14831BB94EAE00216C39 /* engine2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F14821BB94EAE00216C39 /* engine2Model.m */; };
 		578F14871BB94F2500216C39 /* Engine2.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F14861BB94F2500216C39 /* Engine2.m */; };
 		579932651BC14AB8002AA9E3 /* MusicEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 579932601BC14AB8002AA9E3 /* MusicEffect.m */; };
@@ -35,7 +39,6 @@
 		579932731BC1B3C1002AA9E3 /* black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 579932721BC1B3C1002AA9E3 /* black.jpg */; };
 		57A46CF91BB9D62C00E43D1B /* Podrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46CF81BB9D62C00E43D1B /* Podrace.m */; };
 		57A46CFC1BBA868500E43D1B /* Pod2.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46CFB1BBA868500E43D1B /* Pod2.m */; };
-		57A46CFF1BBA86B900E43D1B /* pod2model.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46CFE1BBA86B900E43D1B /* pod2model.m */; };
 		57A46D021BBA8B0600E43D1B /* Podrace2.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46D011BBA8B0600E43D1B /* Podrace2.m */; };
 		57A46D0A1BBA99E100E43D1B /* Rock.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46D091BBA99E100E43D1B /* Rock.m */; };
 		57E22C4E1BC062CB00AC349B /* bulletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E22C4D1BC062CB00AC349B /* bulletModel.m */; };
@@ -67,6 +70,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		573FEC291BE23709009E317E /* engineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engineModel.h; sourceTree = "<group>"; };
+		573FEC2A1BE23709009E317E /* engineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = engineModel.m; sourceTree = "<group>"; };
+		573FEC2C1BE239FC009E317E /* engine2leftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine2leftModel.h; sourceTree = "<group>"; };
+		573FEC2D1BE239FC009E317E /* engine2leftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = engine2leftModel.m; sourceTree = "<group>"; };
+		573FEC2F1BE23A48009E317E /* Engine2left.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine2left.h; sourceTree = "<group>"; };
+		573FEC301BE23A48009E317E /* Engine2left.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine2left.m; sourceTree = "<group>"; };
+		573FEC321BE3855A009E317E /* pod2model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pod2model.h; sourceTree = "<group>"; };
+		573FEC331BE3855A009E317E /* pod2model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pod2model.m; sourceTree = "<group>"; };
+		573FEC351BE38B6F009E317E /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
 		578F14261BB292AF00216C39 /* lab2MG3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab2MG3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578F142A1BB292AF00216C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		578F142B1BB292AF00216C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,8 +107,6 @@
 		578F14771BB92FD600216C39 /* Pod1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pod1.m; sourceTree = "<group>"; };
 		578F14791BB930C700216C39 /* pod1model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pod1model.m; sourceTree = "<group>"; };
 		578F147A1BB930C700216C39 /* pod1model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pod1model.h; sourceTree = "<group>"; };
-		578F147C1BB9376300216C39 /* engineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engineModel.h; sourceTree = "<group>"; };
-		578F147D1BB9376300216C39 /* engineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = engineModel.m; sourceTree = "<group>"; };
 		578F14811BB94EAE00216C39 /* engine2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine2Model.h; sourceTree = "<group>"; };
 		578F14821BB94EAE00216C39 /* engine2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = engine2Model.m; sourceTree = "<group>"; };
 		578F14851BB94F2500216C39 /* Engine2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine2.h; sourceTree = "<group>"; };
@@ -116,8 +126,6 @@
 		57A46CF81BB9D62C00E43D1B /* Podrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podrace.m; sourceTree = "<group>"; };
 		57A46CFA1BBA868500E43D1B /* Pod2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pod2.h; sourceTree = "<group>"; };
 		57A46CFB1BBA868500E43D1B /* Pod2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pod2.m; sourceTree = "<group>"; };
-		57A46CFD1BBA86B900E43D1B /* pod2model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pod2model.h; sourceTree = "<group>"; };
-		57A46CFE1BBA86B900E43D1B /* pod2model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pod2model.m; sourceTree = "<group>"; };
 		57A46D001BBA8B0600E43D1B /* Podrace2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podrace2.h; sourceTree = "<group>"; };
 		57A46D011BBA8B0600E43D1B /* Podrace2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podrace2.m; sourceTree = "<group>"; };
 		57A46D081BBA99E100E43D1B /* Rock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rock.h; sourceTree = "<group>"; };
@@ -239,6 +247,7 @@
 				578F14501BB29ACC00216C39 /* BaseEffect.m */,
 				578F145A1BB2A30500216C39 /* SimpleVertex.glsl */,
 				578F14591BB2A30500216C39 /* SimpleFragment.glsl */,
+				573FEC351BE38B6F009E317E /* fragmentShader.glsl */,
 				578F14581BB2A2C700216C39 /* Vertex.h */,
 			);
 			name = Shaders;
@@ -271,20 +280,22 @@
 				57EF8D0A1BBAE8FA00968905 /* enemyModel.h */,
 				57EA25741BD38EF60061B0EA /* stoneModel.h */,
 				57EA25751BD38EF60061B0EA /* stoneModel.m */,
-				578F147C1BB9376300216C39 /* engineModel.h */,
-				578F147D1BB9376300216C39 /* engineModel.m */,
 				578F14811BB94EAE00216C39 /* engine2Model.h */,
 				578F14821BB94EAE00216C39 /* engine2Model.m */,
+				573FEC291BE23709009E317E /* engineModel.h */,
+				573FEC2A1BE23709009E317E /* engineModel.m */,
+				573FEC321BE3855A009E317E /* pod2model.h */,
+				573FEC331BE3855A009E317E /* pod2model.m */,
 				57EA25711BD38DDE0061B0EA /* rockWideModel.h */,
 				57EA25721BD38DDE0061B0EA /* rockWideModel.m */,
-				57A46CFD1BBA86B900E43D1B /* pod2model.h */,
-				57A46CFE1BBA86B900E43D1B /* pod2model.m */,
 				57EF8D401BBF295300968905 /* sandSkyModel.h */,
 				57EF8D411BBF295300968905 /* sandSkyModel.m */,
 				57E22C4C1BC062CB00AC349B /* bulletModel.h */,
 				57E22C4D1BC062CB00AC349B /* bulletModel.m */,
 				5799326A1BC1A916002AA9E3 /* planetModel.h */,
 				5799326B1BC1A916002AA9E3 /* planetModel.m */,
+				573FEC2C1BE239FC009E317E /* engine2leftModel.h */,
+				573FEC2D1BE239FC009E317E /* engine2leftModel.m */,
 			);
 			name = VertexModels;
 			sourceTree = "<group>";
@@ -327,6 +338,8 @@
 				578F146F1BB7F7E300216C39 /* Engine1.m */,
 				578F14851BB94F2500216C39 /* Engine2.h */,
 				578F14861BB94F2500216C39 /* Engine2.m */,
+				573FEC2F1BE23A48009E317E /* Engine2left.h */,
+				573FEC301BE23A48009E317E /* Engine2left.m */,
 			);
 			name = Engines;
 			sourceTree = "<group>";
@@ -464,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				578F14351BB292AF00216C39 /* Main.storyboard in Resources */,
+				573FEC361BE38B6F009E317E /* fragmentShader.glsl in Resources */,
 				579932671BC14AB8002AA9E3 /* Rush.mp3 in Resources */,
 				579932661BC14AB8002AA9E3 /* Flash.mp3 in Resources */,
 				57EF8D341BBF1C3D00968905 /* dmetal.jpg in Resources */,
@@ -507,21 +521,23 @@
 				578F14831BB94EAE00216C39 /* engine2Model.m in Sources */,
 				57E22C511BC0631C00AC349B /* Bullet.m in Sources */,
 				578F14321BB292AF00216C39 /* ViewController.m in Sources */,
-				578F147E1BB9376300216C39 /* engineModel.m in Sources */,
 				578F14661BB40F3700216C39 /* cube.m in Sources */,
+				573FEC341BE3855A009E317E /* pod2model.m in Sources */,
 				578F147B1BB930C700216C39 /* pod1model.m in Sources */,
 				57A46CFC1BBA868500E43D1B /* Pod2.m in Sources */,
 				57A46CF91BB9D62C00E43D1B /* Podrace.m in Sources */,
 				578F14871BB94F2500216C39 /* Engine2.m in Sources */,
 				578F14701BB7F7E300216C39 /* Engine1.m in Sources */,
 				578F14781BB92FD600216C39 /* Pod1.m in Sources */,
+				573FEC2B1BE23709009E317E /* engineModel.m in Sources */,
 				5799326C1BC1A916002AA9E3 /* planetModel.m in Sources */,
 				578F142F1BB292AF00216C39 /* AppDelegate.m in Sources */,
 				578F142C1BB292AF00216C39 /* main.m in Sources */,
 				578F14511BB29ACC00216C39 /* BaseEffect.m in Sources */,
-				57A46CFF1BBA86B900E43D1B /* pod2model.m in Sources */,
+				573FEC2E1BE239FC009E317E /* engine2leftModel.m in Sources */,
 				5799326F1BC1A992002AA9E3 /* Planet.m in Sources */,
 				57EF8D111BBB2D4E00968905 /* Stone.m in Sources */,
+				573FEC311BE23A48009E317E /* Engine2left.m in Sources */,
 				578F145F1BB2A84F00216C39 /* Model.m in Sources */,
 				57EF8D081BBAE7B100968905 /* Enemy.m in Sources */,
 				57E22C4E1BC062CB00AC349B /* bulletModel.m in Sources */,

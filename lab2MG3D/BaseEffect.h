@@ -9,16 +9,21 @@
 #import <Foundation/Foundation.h>
 @import GLKit;
 
-@interface BaseEffect : NSObject
+@interface BaseEffect : NSObject {
+    GLuint fragmentShaderBlackName;
+    GLuint fragmentShaderName;
+    GLuint vertexShaderName;
+}
 
 @property (nonatomic, assign) GLuint programHandle;
 @property (nonatomic, assign) GLKMatrix4 projectionMatrix;
 @property (nonatomic, assign) GLKMatrix4 modelViewMatrix;
-@property (nonatomic, assign) GLKMatrix4 matrix;
+//@property (nonatomic, assign) GLKMatrix4 matrix;
 @property (assign) GLuint texture;
 
 
 - (id)initWithVertexShader:(NSString *)vertexShader
-            fragmentShader:(NSString *)fragmentShader;
-- (void)prepareToDraw;
+            fragmentShader:(NSString *)fragmentShader
+       fragmentShaderBlack:(NSString *)fragmentShaderBlack;
+- (void)prepareToDraw:(BOOL)shadow;
 @end

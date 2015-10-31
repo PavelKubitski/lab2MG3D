@@ -12,18 +12,22 @@
 @implementation Podrace2
 
 @synthesize position = _position;
-- (instancetype)initWithShader:(BaseEffect*) shader
+- (instancetype)initWithShader:(BaseEffect*)shader
 {
     self = [super init];
     if (self) {
         self.pod = [[Pod2 alloc] initWithShader:shader];
-        self.pod.rotationY = GLKMathDegreesToRadians(90);
-        self.leftEngine = [[Engine2 alloc] initWithShader:shader];
-        self.leftEngine.rotationX = -GLKMathDegreesToRadians(90);
-        self.leftEngine.rotationY = GLKMathDegreesToRadians(90);
+        self.pod.rotationX = GLKMathDegreesToRadians(90);
+        self.pod.rotationY = -GLKMathDegreesToRadians(90);
+        self.pod.shadowMatrix = [self.pod getShadowMatrix:-1];
+        self.leftEngine = [[Engine2left alloc] initWithShader:shader];
+        self.leftEngine.rotationX = GLKMathDegreesToRadians(90);
+        self.leftEngine.rotationY = -GLKMathDegreesToRadians(90);
         self.rightEngine = [[Engine2 alloc] initWithShader:shader];
         self.rightEngine.rotationX = GLKMathDegreesToRadians(90);
         self.rightEngine.rotationY = -GLKMathDegreesToRadians(90);
+        self.leftEngine.shadowMatrix = [self.pod getShadowMatrix:-0.8];
+        self.rightEngine.shadowMatrix = [self.pod getShadowMatrix:-0.8];
     }
     return self;
 }
@@ -53,17 +57,9 @@
 - (void)setPosition:(GLKVector3)position {
     _position = GLKVector3Make(position.x, position.y, position.z);
     self.pod.position = GLKVector3Make(position.x, position.y - 0.5, position.z);
-    self.leftEngine.position = GLKVector3Make(position.x-1*self.pod.scaleX, position.y + 6*self.pod.scaleY, position.z-0.1);
+    self.leftEngine.position = GLKVector3Make(position.x-1.2*self.pod.scaleX, position.y + 6*self.pod.scaleY, position.z-0.1);
     self.rightEngine.position = GLKVector3Make(position.x+1.2*self.pod.scaleX, position.y + 6*self.pod.scaleY, position.z-0.1);
 }
-
-
-
-
-
-
-
-
 
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
     [self.pod renderWithParentModelViewMatrix:parentModelViewMatrix];
@@ -73,10 +69,10 @@
 
 - (void)updateWithDelta:(GLfloat)aDelta {
     self.leftEngine.rotationY += aDelta*2;
-//    self.rightEngine.rotationY -= aDelta;
-//    self.leftEngine.rotationX += aDelta*2;
-    self.rightEngine.rotationX -= aDelta*2;
-    
+    self.rightEngine.rotationY -= aDelta*2;
+
+    self.leftEngine.shadowMatrix = GLKMatrix4Identity;
+    self.rightEngine.shadowMatrix = GLKMatrix4Identity;
     self.leftEngine.position = GLKVector3Make(self.leftEngine.position.x-aDelta*4, self.leftEngine.position.y , self.leftEngine.position.z + 0.8);
     self.rightEngine.position = GLKVector3Make(self.rightEngine.position.x+aDelta*4, self.rightEngine.position.y , self.rightEngine.position.z + 0.7);
 }

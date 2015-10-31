@@ -20,6 +20,13 @@
         self.rightEngine = [[Engine1 alloc] initWithShader:shader];
         self.pod.rotationX = GLKMathDegreesToRadians(90);
         self.pod.rotationY = -GLKMathDegreesToRadians(90);
+        self.leftEngine.rotationX = GLKMathDegreesToRadians(90);
+        self.leftEngine.rotationY = -GLKMathDegreesToRadians(90);
+        self.rightEngine.rotationX = GLKMathDegreesToRadians(90);
+        self.rightEngine.rotationY = -GLKMathDegreesToRadians(90);
+        self.pod.shadowMatrix = [self.pod getShadowMatrix:-1.5];
+        self.leftEngine.shadowMatrix = [self.pod getShadowMatrix:-1.5];
+        self.rightEngine.shadowMatrix = [self.pod getShadowMatrix:-1.5];
     }
     return self;
 }

@@ -54,21 +54,27 @@
         self.podrace2.scaleX = 1.2;
         self.podrace2.scaleY = 1.2;
         self.podrace2.scaleZ = 1.2;
+
         
         self.rockRight = [[Rock alloc] initWithShader:self.shader];
         self.rockRight.position = GLKVector3Make(self.area.width+5, self.area.height/2+5, 0);
+        self.rockRight.shadowMatrix = [self.rockRight getShadowMatrix:-10];
         
         self.enemy = [[Enemy alloc] initWithShader:self.shader];
         self.enemy.position = GLKVector3Make(-1, 30, 10);
+        self.enemy.shadowMatrix = [self.enemy getShadowMatrix:0];
         
         self.bullet = [[Bullet alloc] initWithShader:self.shader];
         self.bullet.position = GLKVector3Make(-1, 30, 10);
 
         self.rockLeft = [[Rock alloc] initWithShader:self.shader];
         self.rockLeft.position = GLKVector3Make(-31, self.area.height/2+5, 0);
+        self.rockLeft.shadowMatrix = [self.rockLeft getShadowMatrix:-1];
         
         self.stone = [[Stone alloc] initWithShader:self.shader];
         self.stone.position = GLKVector3Make(self.area.width/2, 50, 0);
+        self.stone.shadowMatrix = [self.stone getShadowMatrix:0];
+        
         
         [self.children addObject:self.podrace];
         [self.children addObject:self.podrace2];
@@ -86,7 +92,7 @@
     if (self.podrace2.position.y > 18) {
         if (self.podrace2.position.y > 18 && self.podrace2.position.y < 19) {
 //            [[MusicEffect sharedInstance] playPopEffect];
-            if ([self.children indexOfObject:self.children] == NSNotFound) {
+            if ([self.children indexOfObject:self.bullet] == NSNotFound) {
                 [self.children addObject:self.bullet];
             }
         }

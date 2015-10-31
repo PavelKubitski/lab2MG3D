@@ -25,7 +25,8 @@
 @property (nonatomic, assign) float scaleY;
 @property (nonatomic, assign) float scaleZ;
 @property (nonatomic, assign) GLKVector3 velocity;
-@property (nonatomic) GLuint texture;
+@property (nonatomic, assign) GLuint texture;
+@property (nonatomic, assign) GLKMatrix4 shadowMatrix;
 
 @property (nonatomic, strong) NSMutableArray *children;
 
@@ -33,4 +34,5 @@
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
 - (void)updateWithDelta:(GLfloat)aDelta;
 - (void)loadTexture:(NSString *)filename;
+- (GLKMatrix4)getShadowMatrix:(GLfloat)y;
 @end

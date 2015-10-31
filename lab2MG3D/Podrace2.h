@@ -8,12 +8,15 @@
 
 #import "Model.h"
 #import "Engine2.h"
+#import "engine2left.h"
 #import "Pod2.h"
 
-@interface Podrace2 : Model
+@interface Podrace2 : Model {
+    float r;
+}
 
 @property (nonatomic, strong) Pod2 *pod;
-@property (nonatomic, strong) Engine2 *leftEngine;
+@property (nonatomic, strong) Engine2left *leftEngine;
 @property (nonatomic, strong) Engine2 *rightEngine;
 
 - (instancetype)initWithShader:(BaseEffect *)shader;

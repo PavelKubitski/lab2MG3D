@@ -44,12 +44,13 @@
     
 //    [[MusicEffect sharedInstance] playBackgroundMusic:@"Rush.mp3"];
 
-    self.shader = [[BaseEffect alloc] initWithVertexShader:@"SimpleVertex.glsl" fragmentShader:@"SimpleFragment.glsl"];
+    self.shader = [[BaseEffect alloc] initWithVertexShader:@"SimpleVertex.glsl" fragmentShader:@"SimpleFragment.glsl" fragmentShaderBlack:@"fragmentShader.glsl"];
 
     self.scene = [[Scene alloc] initWithShader:self.shader];
     
     self.backStage = [[BackStage alloc] initWithShader:self.shader];
     self.backStage.position = GLKVector3Make(0, -20, -35);
+    self.backStage.shadowMatrix = [self.backStage getShadowMatrix:-50];
     
     self.planet = [[Planet alloc] initWithShader:self.shader];
     self.planet.position = GLKVector3Make(15, 20, -50);
