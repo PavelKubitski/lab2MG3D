@@ -32,13 +32,14 @@
 @property (nonatomic, strong) Rock *rockLeft;
 @property (nonatomic, strong) Enemy *enemy;
 @property (nonatomic, strong) Stone *stone;
-@property (nonatomic, strong) Bullet *bullet;
+//@property (nonatomic, strong) Bullet *laser3;
 @property (nonatomic, strong) T_fighter *fighter1;
 @property (nonatomic, strong) T_fighter *fighter2;
 @property (nonatomic, strong) falcon *falcon;
 //@property (nonatomic, strong) BaseEffect *shader1;
 @property (nonatomic, strong) Laser *laser;
 @property (nonatomic, strong) Laser *laser2;
+@property (nonatomic, strong) Laser *laser3;
 @end
 
 
@@ -96,8 +97,12 @@
         self.enemy.position = GLKVector3Make(-1, 30, 10);
         self.enemy.shadowMatrix = [self.enemy getShadowMatrix:0];
         
-        self.bullet = [[Bullet alloc] initWithShader:self.shader];
-        self.bullet.position = GLKVector3Make(-1, 30, 10);
+        self.laser3 = [[Laser alloc] initWithShader:self.shader];
+        self.laser3.position = GLKVector3Make(-1, 30, 10);
+        
+        self.laser3.scaleX = 0.5;
+        self.laser3.scaleY = 0.5;
+        self.laser3.scaleZ = 0.5;
 
         self.rockLeft = [[Rock alloc] initWithShader:self.shader];
         self.rockLeft.position = GLKVector3Make(-31, self.area.height/2+5, 0);
@@ -125,18 +130,18 @@
     if (self.podrace2.position.y > 18) {
         if (self.podrace2.position.y > 18 && self.podrace2.position.y < 19) {
 //            [[MusicEffect sharedInstance] playPopEffect];
-            if ([self.children indexOfObject:self.bullet] == NSNotFound) {
-                [self.children addObject:self.bullet];
+            if ([self.children indexOfObject:self.laser3] == NSNotFound) {
+                [self.children addObject:self.laser3];
             }
         }
-        self.bullet.position = GLKVector3Make(self.bullet.position.x+aDelta, self.bullet.position.y, self.bullet.position.z-aDelta*1.6);
+        self.laser3.position = GLKVector3Make(self.laser3.position.x+aDelta, self.laser3.position.y, self.laser3.position.z-aDelta*1.6);
     }
     if (self.podrace2.position.y <= 25) {
         self.podrace2.position = GLKVector3Make(self.podrace2.position.x, self.podrace2.position.y + aDelta, self.podrace2.position.z);
     } else if (self.podrace2.position.y > 25 && self.podrace2.position.y < 40 ) {
         self.podrace2.position = GLKVector3Make(self.podrace2.position.x+aDelta/3.5, self.podrace2.position.y + aDelta, self.podrace2.position.z);
-        if (self.bullet) {
-            [self.children removeObject:self.bullet];
+        if (self.laser3) {
+            [self.children removeObject:self.laser3];
         }
         if (self.podrace2.position.y > 39 && self.podrace2.position.y < 40) {
 //            [[MusicEffect sharedInstance] playFlashEffect];
