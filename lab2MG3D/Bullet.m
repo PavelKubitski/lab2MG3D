@@ -14,7 +14,7 @@
 
 - (instancetype)initWithShader:(BaseEffect *)shader {
     if (self = [super initWithName:"Bullet" shader:shader vertices:(MyVertex *)Circle_Circle_001_None_Vertices vertexCount:sizeof(Circle_Circle_001_None_Vertices)/sizeof(Circle_Circle_001_None_Vertices[0])]) {
-        [self loadTexture:@"metal.jpeg"];
+        [self loadTexture:@"yellow.png"];
         self.scaleX = 0.5;
         self.scaleY = 0.5;
         self.scaleZ = 0.5;

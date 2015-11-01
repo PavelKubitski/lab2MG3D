@@ -14,6 +14,9 @@
     if (self = [super initWithName:"Planet" shader:shader vertices:(MyVertex *)Sphere_None_Verticess vertexCount:sizeof(Sphere_None_Verticess)/sizeof(Sphere_None_Verticess[0])]) {
         [self loadTexture:@"jupitermap.jpg"];
 
+        self.scaleX = 2.5;
+        self.scaleY = 2.5;
+        self.scaleZ = 2.5;
 //        self.rotationX = GLKMathDegreesToRadians(90);
 //        self.rotationY = -GLKMathDegreesToRadians(90);
     }

@@ -14,6 +14,7 @@
 #import "BackStage.h"
 #import "MusicEffect.h"
 #import "Planet.h"
+#import "T_fighter.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) BaseEffect *shader;
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) BackStage *backStage;
 @property (nonatomic, strong) Scene *scene;
 @property (nonatomic, strong) Planet *planet;
+
 
 @end
 
@@ -46,6 +48,7 @@
 
     self.shader = [[BaseEffect alloc] initWithVertexShader:@"SimpleVertex.glsl" fragmentShader:@"SimpleFragment.glsl" fragmentShaderBlack:@"fragmentShader.glsl"];
 
+
     self.scene = [[Scene alloc] initWithShader:self.shader];
     
     self.backStage = [[BackStage alloc] initWithShader:self.shader];
@@ -53,8 +56,8 @@
     self.backStage.shadowMatrix = [self.backStage getShadowMatrix:-50];
     
     self.planet = [[Planet alloc] initWithShader:self.shader];
-    self.planet.position = GLKVector3Make(15, 20, -50);
-
+    self.planet.position = GLKVector3Make(20, 30, -90);
+    self.planet.shadowMatrix = [self.planet getShadowMatrix:-50];
     _shader.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width/self.view.bounds.size.height, 1, 150);
 }
 
@@ -72,9 +75,9 @@
     
     [self.scene renderWithParentModelViewMatrix:viewMatrix];
     [self.backStage renderWithParentModelViewMatrix:viewMatrix];
-//    [self.planet renderWithParentModelViewMatrix:viewMatrix];
-    
+    [self.planet renderWithParentModelViewMatrix:viewMatrix];
 
+    
     
 }
 

@@ -69,12 +69,16 @@
 
 - (void)updateWithDelta:(GLfloat)aDelta {
     self.leftEngine.rotationY += aDelta*2;
-    self.rightEngine.rotationY -= aDelta*2;
+    self.rightEngine.rotationY += aDelta*2;
+    static float dt = -0.8;
+    dt -= 0.5;
 
-    self.leftEngine.shadowMatrix = GLKMatrix4Identity;
-    self.rightEngine.shadowMatrix = GLKMatrix4Identity;
+    self.leftEngine.shadowMatrix = [self getShadowMatrix:dt];
+    self.rightEngine.shadowMatrix = GLKMatrix4Identity; //[self.rightEngine getShadowMatrix:dt];
     self.leftEngine.position = GLKVector3Make(self.leftEngine.position.x-aDelta*4, self.leftEngine.position.y , self.leftEngine.position.z + 0.8);
     self.rightEngine.position = GLKVector3Make(self.rightEngine.position.x+aDelta*4, self.rightEngine.position.y , self.rightEngine.position.z + 0.7);
 }
+
+
 
 @end

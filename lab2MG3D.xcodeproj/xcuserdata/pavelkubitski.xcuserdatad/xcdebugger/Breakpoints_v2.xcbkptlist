@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lab2MG3D/Scene.m"
-            timestampString = "467804682.415219"
+            timestampString = "468094499.675029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-updateWithDelta:"
             landmarkType = "5">
          </BreakpointContent>
@@ -68,15 +68,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lab2MG3D/Model.m"
-            timestampString = "467986896.832537"
+            timestampString = "468089908.998885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "-loadTexture:"
             landmarkType = "5">
          </BreakpointContent>
@@ -173,13 +173,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "lab2MG3D/Scene.m"
-            timestampString = "467804682.415219"
+            filePath = "lab2MG3D/BaseEffect.m"
+            timestampString = "467898173.982624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-initWithShader:"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-prepareToDraw:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -189,13 +189,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "lab2MG3D/BaseEffect.m"
-            timestampString = "467898173.982624"
+            filePath = "lab2MG3D/Scene.m"
+            timestampString = "468094499.675029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "-prepareToDraw:"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-updateWithDelta:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lab2MG3D/Scene.m"
+            timestampString = "468094499.675029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-initWithShader:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
